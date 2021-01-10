@@ -8,6 +8,9 @@ import Checkout from './Components/Checkout'
 import Login from "./Components/Login"
 import {useStateValue} from './Components/StateProvider'
 import {auth} from "./Components/firebase";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const [{user},dispatch] = useStateValue();

@@ -2,6 +2,8 @@ import React from 'react'
 import './Product.css'
 import StarIcon from '@material-ui/icons/Star';
 import { useStateValue } from './StateProvider';
+// import {toast } from 'react-toastify';
+
 
 function Product({id,title,image,price,rating}) {
    const [{basket},dispatch] = useStateValue();
@@ -16,6 +18,17 @@ function Product({id,title,image,price,rating}) {
               rating
           }
         })
+
+        // toast('🦄 Wow so easy!', {
+        //     position: "top-right",
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined,
+        //     });
+    //    toast.success(`Item added to cart!`);
     }
     return (
         <div className='product'>
